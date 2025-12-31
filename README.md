@@ -4,6 +4,8 @@ StockSense AI is a modern educational app that explains stock market concepts in
 
 <img width="308" height="77" alt="image" src="https://github.com/user-attachments/assets/a27917a9-badd-43ca-adc0-a1684a596dd0" />
 
+<img width="1200" height="690" alt="image" src="https://github.com/user-attachments/assets/b78409aa-495d-4c2b-92f7-2ba26b35f759" />
+
 ## Tech stack
 - Next.js (App Router) + React
 - Tailwind CSS + Framer Motion
