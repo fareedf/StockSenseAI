@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const LOCAL_STORAGE_KEY = "stocksense-conversation-id";
 const EXAMPLE_PROMPTS = [
-  "Explain dividends like I'm 10.",
+  "Explain dividends like I’m 10.",
   "What does market cap mean for $AAPL?",
   "How do ETFs differ from stocks?",
   "What is the P/E ratio and why does it matter?"
@@ -34,12 +34,10 @@ export function ChatWindow() {
     }
   }, []);
 
-  // Clean up conversation on unload/unmount
   useEffect(() => {
     const cleanup = () => {
       if (conversationId) {
         const payload = JSON.stringify({ conversationId });
-        // Use sendBeacon so it can fire during unload
         const blob = new Blob([payload], { type: "application/json" });
         navigator.sendBeacon("/api/chat/delete", blob);
         window.localStorage.removeItem(LOCAL_STORAGE_KEY);
@@ -159,7 +157,7 @@ export function ChatWindow() {
               <div className="max-w-2xl text-center space-y-4">
                 <h2 className="text-2xl font-semibold text-slate-900">Ask about any stock market concept.</h2>
                 <p className="text-slate-500">
-                  Try "What is market capitalization?" or "Explain dividends like I&apos;m 10." Mention a ticker (e.g., $MSFT) for a market snapshot.
+                  Try "What is market capitalization?" or "Explain dividends like I’m 10." Mention a ticker (e.g., $MSFT) for a market snapshot.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {EXAMPLE_PROMPTS.map((prompt) => (
