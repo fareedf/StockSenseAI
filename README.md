@@ -2,6 +2,10 @@
 
 StockSense AI is a modern educational app that explains stock market concepts in clear language. It never gives financial advice or stock picks.
 
+<img width="308" height="77" alt="image" src="https://github.com/user-attachments/assets/a27917a9-badd-43ca-adc0-a1684a596dd0" />
+
+<img width="1200" height="690" alt="image" src="https://github.com/user-attachments/assets/b78409aa-495d-4c2b-92f7-2ba26b35f759" />
+
 ## Tech stack
 - Next.js (App Router) + React
 - Tailwind CSS + Framer Motion
@@ -38,11 +42,6 @@ StockSense AI is a modern educational app that explains stock market concepts in
 - Teach stock market concepts only; no advice or picks.
 - Structured sections: Concept, Simple Explanation, Example, Common Mistake (+ Market Snapshot when data is present).
 - Modes: Beginner, Explain Like I’m 10, Analogy.
-
-## Safety & UX
-- Light SaaS styling, smooth transitions, responsive layout.
-- Loading/error states for all data fetches.
-- Input disabled during AI calls; conversation ID persisted in `localStorage`.
 
 ## Notes
 - Alpha Vantage free tier is rate-limited; retry if you hit limits.
