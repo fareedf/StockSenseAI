@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-surface text-slate-800 min-h-screen;
+  font-family: "Space Grotesk", "Inter", system-ui, -apple-system, sans-serif;
+  background:
+    radial-gradient(circle at 18% 15%, rgba(34, 197, 94, 0.14), transparent 26%),
+    radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.12), transparent 24%),
+    linear-gradient(150deg, #f8fafc 0%, #eef3f9 55%, #e6ecf5 100%);
+}
+
+::selection {
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.glass-panel {
+  @apply bg-white/60 backdrop-blur-md border border-slate-200 shadow-card;
+}
+
+.soft-card {
+  @apply rounded-3xl border border-slate-200 bg-white shadow-lg;
+}
+
+.prose-structured h3 {
+  @apply text-lg font-semibold text-white mt-4;
+}
+
+.prose-structured p {
+  @apply text-slate-200 leading-relaxed;
+}
+
+.prose-structured ul {
+  @apply list-disc list-inside text-slate-300 space-y-1;
+}
+
+.prose-structured strong {
+  @apply text-white;
+}
+
+/* Custom scrollbar */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.35);
+  border-radius: 9999px;
+}
+* {
+  scrollbar-color: rgba(100, 116, 139, 0.35) transparent;
+  scrollbar-width: thin;
+}
